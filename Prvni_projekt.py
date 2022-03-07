@@ -57,8 +57,8 @@ if jmeno in prihlaseni.keys():
                 cisty_lis = []
                 for i in oddel_slov:
                     slovo = i.strip(",.")
-                    if slovo.isalpha() or slovo.isnumeric() or slovo.isalnum():
-                        cisty_lis.append(slovo)
+                    cisty_lis.append(slovo)
+                print(cisty_lis)
                 for i in cisty_lis:
                     if i.isnumeric():
                         statistika["pocet_cisel"] += 1
